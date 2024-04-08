@@ -1,12 +1,12 @@
 import './theme/global.css'
 
-import { Header } from "./components/header"
+import { Header } from "./components/Header/index"
 
 function App() {
   return (
-    <>
+   
       <Header/>      
-    </>
+   
   )
 }
 

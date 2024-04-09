@@ -5,12 +5,13 @@ interface ButtonProps{
     title: string
     style: string
     icon?: React.ReactNode
+    onClick: () => void
 }
 
-export const Button = ({style, title, icon}: ButtonProps) => {
+export const Button = ({style, title, icon, onClick}: ButtonProps) => {
     return(
         
-            <button className={style}> {title} {icon}</button>
+            <button className={style} onClick={onClick}> {title} {icon} </button>
         
         
     )
